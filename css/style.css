@@ -1,0 +1,100 @@
+:root
+{
+  --pink:#FD5C63;
+  --black:#333333;
+}
+*
+{
+  margin:0;
+  padding: 0;
+}
+.centrar
+{
+  width: 80%;
+  margin: 0 auto;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.main
+{
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/background.jpg);
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.black
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.7);
+}
+/*--------------------------------HEADER*/
+header
+{
+  padding-top: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo
+{
+  cursor: pointer;
+}
+.logo h1
+{
+  font-size: 2.5em;
+  letter-spacing: 7pt;
+  color: white;
+}
+.logo h1:hover{
+  color: var(--pink);
+  transition: all 1000ms;
+}
+.user
+{
+  display: flex;
+  align-items: center;
+}
+.search input{
+  padding: .7em;
+  margin: 0;
+  border:0;
+}
+.search input[type="button"]
+{
+  background: var(--pink);
+  padding: .7em .9em;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+.search input[type="button"]:hover
+{
+  background: var(--black);
+  transition: all 500ms;
+}
+.user-log
+{
+  border: 1px solid white;
+  margin-left: 2em;
+  padding: .2em .4em;
+  cursor: pointer;
+}
+.user-log:hover
+{
+  border:1px solid var(--pink);
+  background: var(--pink);
+  transition: all 500ms;
+}
+.user-log i
+{
+  font-size: 1.3em;
+  color: white;
+}
