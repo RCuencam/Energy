@@ -98,3 +98,36 @@ header
   font-size: 1.3em;
   color: white;
 }
+
+/*---------------------------------------------MENU*/
+
+.menu
+{
+  max-width:750px;
+  margin: 1.9em auto;
+}
+.menu ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+.menu ul li{
+  margin:0 10px;
+}
+.menu ul li a
+{
+  text-decoration: none;
+  color: white;
+  letter-spacing: 1pt;
+}
+.menu ul li a:hover
+{
+  text-decoration: underline;
+  color: var(--pink);
+  transition: all 500ms;
+}
+
+#first
+{
+  color: var(--pink);
+}
