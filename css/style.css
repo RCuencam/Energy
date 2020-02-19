@@ -7,7 +7,19 @@
 {
   margin:0;
   padding: 0;
+  box-sizing: border-box;
 }
+/*------------------------CLASES PRE-HECHAS*/
+.button-style
+{
+  background: var(--pink);
+  color: white;
+  font-weight: 600;
+  font-size: 1em;
+  cursor: pointer;
+  padding: .8em 1.5em;
+}
+/*-------------------------------------------*/
 .centrar
 {
   width: 80%;
@@ -32,7 +44,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0,0,0,.7);
+  background: rgba(0,0,0,.4);
 }
 /*--------------------------------HEADER*/
 header
@@ -71,7 +83,6 @@ header
   background: var(--pink);
   padding: .7em .9em;
   color: white;
-  font-family: 'Arial', sans-serif;
   font-weight: 600;
   cursor: pointer;
 }
@@ -130,4 +141,115 @@ header
 #first
 {
   color: var(--pink);
+}
+
+/*---------------------------------------------INFORMACION PRINCIPAL*/
+
+.main-contain
+{
+  padding-top: 4em;
+  text-align: center;
+  color: white;
+}
+
+.main-title h1
+{
+  font-size: 4em;
+  letter-spacing: 1pt;
+}
+.main-title h3
+{
+  font-family: 'Open Sans Condensed', sans-serif;
+  letter-spacing: 2.5pt;
+  font-size: 2.5em;
+  font-weight: 100;
+  color: rgba(255,255,255,.9);
+}
+.main-bottom
+{
+  width: 40%;
+  margin: 30px auto;
+}
+.main-bottom input
+{
+  color: white;
+  margin-top: 2em;
+  padding: .8em 2em;
+  font-size: 1em;
+  border:3px solid white;
+  background: transparent;
+  cursor: pointer;
+  letter-spacing: 1pt;
+}
+
+.main-bottom input:hover
+{
+  border:3px solid var(--pink);
+  background: var(--pink);
+  transition: all 500ms;
+}
+
+/*----------------------------------------CONTENIDO*/
+
+.information
+{
+  width: 80%;
+  height: 350px;
+  display: grid;
+  grid-template: 1fr/repeat(3,1fr);
+}
+.info-detail
+{
+  padding-top: 1em;
+  justify-content:center;
+}
+.info-img
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+}
+.info-img img
+{
+  width: 50px;
+  height: 50px;
+}
+.info-text
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  border-top: 1px solid grey;
+  padding: 0 1em;
+}
+.number
+{
+  width: 35px;
+  height: 35px;
+  background: var(--pink);
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  line-height:35px;
+  font-weight: 600;
+  position: absolute;
+  top: -20px;
+}
+.text-detail
+{
+  margin-top: 2em;
+}
+.text-detail h2
+{
+  letter-spacing: 1pt;
+}
+.text-detail p
+{
+  margin-top: 1em;
+  font-size: 1.2em;
+  opacity: .7;
+  line-height: 150%;
 }
