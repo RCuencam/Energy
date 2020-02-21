@@ -582,3 +582,15 @@ header
 {
   background: var(--linkedin);
 }
+
+/*-----------------------------------------------------MAP*/
+
+.map
+{
+  padding: 3em 0;
+}
+.map iframe
+{
+  width: 100%;
+  height: 400px;
+}
