@@ -207,8 +207,9 @@ header
 
 .information
 {
+  padding: 4em 0 3em 0;
   width: 80%;
-  height: 350px;
+  height: auto;
   display: grid;
   grid-template: 1fr/repeat(3,1fr);
 }
@@ -222,12 +223,12 @@ header
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40%;
 }
 .info-img img
 {
   width: 50px;
   height: 50px;
+  margin-bottom: 3em;
 }
 .info-text
 {
@@ -273,7 +274,7 @@ header
 {
   display: grid;
   grid-template: 470px/650px 1fr;
-  padding: 5em 0;
+  padding: 2em 0;
 }
 .features-img img
 {
@@ -568,19 +569,63 @@ header
 }
 .facebook
 {
+  border: 2px solid var(--facebook);
   background: var(--facebook);
+}
+.facebook:hover
+{
+  background: transparent;
+  transition: all 500ms;
+}
+.facebook a:hover
+{
+  color: var(--facebook);
+  transition: all 500ms;
 }
 .twitter
 {
+  border: 2px solid var(--twitter);
   background: var(--twitter);
+}
+.twitter:hover
+{
+  background: transparent;
+  transition: all 500ms;
+}
+.twitter a:hover
+{
+  color: var(--twitter);
+  transition: all 500ms;
 }
 .google
 {
+  border:2px solid var(--google);
   background: var(--google);
+}
+.google:hover
+{
+  background: transparent;
+  transition: all 500ms;
+}
+.google a:hover
+{
+  color: var(--google);
+  transition: all 500ms;
 }
 .linkedin
 {
+  border: 2px solid var(--linkedin);
   background: var(--linkedin);
+}
+.linkedin:hover
+{
+  background: transparent;
+  transition: all 500ms;
+}
+.linkedin a:hover
+{
+  color: var(--linkedin);
+  transition: all 500ms;
 }
 
 /*-----------------------------------------------------MAP*/
