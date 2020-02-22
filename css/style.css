@@ -124,7 +124,7 @@ header
 
 .menu
 {
-  max-width:750px;
+  max-width:600px;
   margin: 1.9em auto;
 }
 .menu ul{
@@ -700,7 +700,7 @@ header
 
   display: grid;
   grid-template: repeat(5,1fr)/repeat(2,minmax(300px,1fr));
-  grid-gap: 10px;
+  grid-gap: 15px;
 }
 .form form input
 {
@@ -740,4 +740,38 @@ header
   grid-column: span 2;
   grid-row: span 3;
   position: relative;
+}
+
+/*------------------------------------------------FOOTER*/
+
+footer
+{
+  height: 300px;
+  background: var(--grey-light);
+  display: flex;
+  align-items:center;
+}
+.footer-up
+{
+  display: flex;
+  justify-content: space-around;
+  line-height: 180%;
+  margin: 2em 0;
+}
+.footer-up h2
+{
+  margin-bottom: .7em;
+}
+.footer-up p
+{
+  opacity: .7;
+}
+.footer-down
+{
+  text-align: center;
+  margin: 2em 0;
+}
+.footer-down p
+{
+  opacity: .7;
 }
