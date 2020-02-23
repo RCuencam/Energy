@@ -1,0 +1,255 @@
+
+@media screen and (max-width:1024px)
+{
+  /*-------------------------------------MAIN*/
+  .main-bottom input
+  {
+    margin-bottom: 2em;
+  }
+  /*-------------------------------------FEATURES*/
+  .features
+  {
+    display: grid;
+    grid-template: 400px/450px 1fr;
+    padding: 2em 0;
+  }
+  .features-detail h1
+  {
+    font-size: 2em;
+  }
+  /*-------------------------------------INFORMATION*/
+  .text-detail
+  {
+    font-size: 1em;
+  }
+  /*-------------------------------------PRODUCTS*/
+  .product-text h3
+  {
+    font-size: .8em;
+  }
+  .product-text h1
+  {
+    font-size: 2em;
+  }
+  /*-------------------------------------PLANS*/
+  .plans
+  {
+    height: auto;
+    padding-bottom: 2em;
+  }
+  .info-text
+  {
+    font-size: 1em;
+  }
+  .info-list
+  {
+    font-size: 1em;
+    letter-spacing: 1pt;
+  }
+}
+@media screen and (max-width:850px)
+{
+  /*-------------------------------------FEATURES*/
+  .features
+  {
+    display: grid;
+    grid-template: 400px/450px 1fr;
+    padding: 2em 0;
+  }
+  .features-detail p
+  {
+    font-size: .9em;
+  }
+  /*-------------------------------------MEMBERS*/
+  .members-info
+  {
+    display: grid;
+    grid-template: 70px 1fr/290px 1fr;
+    grid-template-areas: "area1 area2" "area1 area3";
+  }
+  /*-------------------------------------PRODUCTS*/
+  .products-list
+  {
+    display: grid;
+    grid-template: repeat(3,1fr)/repeat(2,1fr);
+    grid-template-areas: "one one" "two three" "four five";
+    grid-gap: 20px;
+  }
+}
+
+@media screen and (max-width:768px)
+{
+  /*-------------------------------------MENU*/
+  .menu
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .menu ul
+  {
+    display:block;
+    text-align: center;
+    background: var(--black);
+    width: 80%;
+    height: 300px;
+    position: absolute;
+    top: 100%;
+  }
+  .menu ul li
+  {
+    margin:25px 0;
+  }
+  .menu-button
+  {
+    display: block;
+    text-align: center;
+    background: var(--pink);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size:   30px;
+    color: white;
+  }
+  /*-------------------------------------MAIN*/
+  .main-bottom
+  {
+    width:80%;
+  }
+  /*-------------------------------------INFORMATION*/
+  .information
+  {
+    display: block;
+  }
+  .info-text
+  {
+    border:0;
+  }
+
+  /*-------------------------------------FEATURES*/
+  .features
+  {
+    display: block;
+    width: 100%;
+  }
+  /*-------------------------------------PRODUCTS*/
+
+  .products
+  {
+    width: 100%;
+  }
+
+  .products-list
+  {
+    display: grid;
+    grid-template: 1fr repeat(4,300px)/1fr;
+    grid-template-areas: "one" "two" "three" "four" "five";
+    grid-gap: 20px;
+  }
+  .product-detail-first
+  {
+    width: 60%;
+    display: block;
+    padding: 1em;
+    margin: 0 auto;
+  }
+  .product-detail
+  {
+    width: 60%;
+    margin:0 auto;
+  }
+  /*-------------------------------------MEMBERS*/
+  .members-info
+  {
+    justify-content: center;
+  }
+  .user-principal
+  {
+    margin-top: 1.9em;
+  }
+  .members-info
+  {
+    display: grid;
+    grid-template: 100px 400px 1fr/minmax(300px,400px);
+    grid-template-areas: "area2" "area1" "area3";
+  }
+  /*-------------------------------------PLANS*/
+  .plans-list
+  {
+    display: block;
+  }
+  .plan-detail
+  {
+    width: 80%;
+    margin: 5em auto;
+  }
+  .info-list
+  {
+    font-size: 1.2em;
+  }
+  /*-------------------------------------CONTACT*/
+  .contact
+  {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin-bottom: 2em;
+  }
+  .contact-info
+  {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 2em;
+  }
+  .form
+  {
+    width: 100%;
+  }
+  .form form
+  {
+
+    display: grid;
+    grid-template: repeat(7,1fr)/repeat(2,1fr);
+    grid-template-areas: "name" "email" "phone" "subject" "message" "message" "message";
+    grid-gap: 15px;
+  }
+  .form form input
+  {
+    width: 544px;
+  }
+  .name
+  {
+    grid-area: name;
+  }
+  .email
+  {
+    grid-area: email;
+  }
+  .phone
+  {
+    grid-area: phone;
+  }
+  .subject
+  {
+    grid-area: subject;
+  }
+  .message
+  {
+    grid-area: message;
+  }
+  /*-------------------------------------FOOTER*/
+  footer
+  {
+    height: auto;
+  }
+  .footer-up
+  {
+    display: block;
+  }
+  .contact-us
+  {
+    margin-bottom: 1em;
+  }
+}
