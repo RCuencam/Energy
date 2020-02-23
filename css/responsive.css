@@ -6,6 +6,10 @@
   {
     margin-bottom: 2em;
   }
+  .main-contain
+  {
+    padding-top: 1em;
+  }
   /*-------------------------------------FEATURES*/
   .features
   {
@@ -45,6 +49,13 @@
   {
     font-size: 1em;
     letter-spacing: 1pt;
+  }
+}
+@media screen and (max-width:955px)
+{
+  .main-bottom
+  {
+    width: 80%;
   }
 }
 @media screen and (max-width:850px)
@@ -90,17 +101,17 @@
   }
   .menu ul
   {
-    display:block;
+    display:none;
     text-align: center;
     background: var(--black);
     width: 80%;
-    height: 300px;
+    height: 500px;
     position: absolute;
-    top: 100%;
+    top: 20px;
   }
   .menu ul li
   {
-    margin:25px 0;
+    margin:15px 0;
   }
   .menu-button
   {
@@ -112,8 +123,15 @@
     line-height: 50px;
     font-size:   30px;
     color: white;
+    cursor:pointer;
+    position: absolute;
+    left: 10%;
   }
   /*-------------------------------------MAIN*/
+  .main
+  {
+    height: 100vh;
+  }
   .main-bottom
   {
     width:80%;
@@ -217,7 +235,7 @@
   }
   .form form input
   {
-    width: 544px;
+    width: 400px;
   }
   .name
   {
@@ -251,5 +269,101 @@
   .contact-us
   {
     margin-bottom: 1em;
+  }
+}
+@media screen and (max-width:630px)
+{
+  .search
+  {
+    display: none;
+    height: auto;
+  }
+  .main
+  {
+    height: 100vh;
+  }
+}
+@media screen and (max-width:425px)
+{
+  /*-------------------------------------HEADER*/
+  .search
+  {
+    display: none;
+  }
+  .main
+  {
+    height: 100vh;
+  }
+  .menu-list ul
+  {
+    display: block;
+  }
+  /*-------------------------------------MAIN*/
+  .main-title
+  {
+    font-size: .7em;
+  }
+  .main-bottom
+  {
+    font-size: .7em;
+    width: 80%;
+  }
+  .main-bottom p
+  {
+    font-size: 1.5em;
+  }
+  .main-contain
+  {
+    padding-top: .5em;
+  }
+  /*-------------------------------------PRODUCT*/
+  .products h1
+  {
+    font-size: 1.5em;
+  }
+  .product-detail-first
+  {
+    width: 85%;
+  }
+  .product-detail
+  {
+    width: 85%;
+  }
+  /*-------------------------------------PLANS*/
+  .plans h1
+  {
+    font-size: 2em;
+  }
+  .time-item
+  {
+    width: 100px;
+  }
+  .info-list
+  {
+    font-size: 1em;
+  }
+  /*-------------------------------------MEMBERS*/
+  .members h1
+  {
+    font-size: 2em;
+  }
+  .members-list ul
+  {
+    justify-content: center;
+  }
+  .members-list ul li
+  {
+    width: 70px;
+    height: 70px;
+  }
+  .members-list ul li img
+  {
+    width: 70px;
+    height: 70px;
+  }
+  /*-------------------------------------CONTACT*/
+  .form form input
+  {
+    width: 300px;
   }
 }
