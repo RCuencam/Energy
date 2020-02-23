@@ -127,6 +127,10 @@ header
   max-width:600px;
   margin: 1.9em auto;
 }
+.menu-button
+{
+  display: none;
+}
 .menu ul{
   display: flex;
   list-style: none;
@@ -147,7 +151,10 @@ header
   color: var(--pink);
   transition: all 500ms;
 }
-
+.menu-bottom
+{
+  width: 80%;
+}
 #first
 {
   color: var(--pink);
@@ -324,6 +331,7 @@ header
 {
   display: grid;
   grid-template: repeat(2,1fr)/repeat(3,1fr);
+  grid-template-areas: "one one two" "three four five";
   grid-gap: 20px;
 }
 .products-list img
@@ -338,10 +346,26 @@ header
 }
 .product-detail-first
 {
-  grid-column: span 2;
+  grid-area: one;
   box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.2);
   display: flex;
   align-items:center;
+}
+.p2
+{
+  grid-area: two;
+}
+.p3
+{
+  grid-area: three;
+}
+.p4
+{
+  grid-area: four;
+}
+.p5
+{
+  grid-area: five;
 }
 .product-detail-first h3,.product-detail-first p
 {
@@ -502,7 +526,7 @@ header
 .members-info
 {
   display: grid;
-  grid-template: 100px 1fr/400px 1fr;
+  grid-template: 100px 1fr/350px 1fr;
   grid-template-areas: "area1 area2" "area1 area3";
 }
 .user-principal
