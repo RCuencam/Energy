@@ -528,6 +528,7 @@ header
   display: grid;
   grid-template: 100px 1fr/350px 1fr;
   grid-template-areas: "area1 area2" "area1 area3";
+  margin: 0 auto;
 }
 .user-principal
 {
